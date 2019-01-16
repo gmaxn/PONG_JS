@@ -4,23 +4,36 @@
 		<title>Pong</title>
 	    <style>
 	        body {
-	            align-items: center;
-	            background: #202020;
-	            display: flex;
-	            margin: 0;
+				background-image: url("wall.gif");
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-position: center; 
 	        }
-	        canvas {
+			div {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);			
+			}
+	        #pong {
 	            border: solid 1px #fff;
 	            border-left: none;
 	            border-right: none;
 	            image-rendering: pixelated;
-	            width: 100%;
+
 	        }
-	    </style>
+
+		</style>
+		
+		
+
 	</head>
 
 	<body>
-		<canvas id="pong" width="600" height="400"></canvas>
+		<div>
+			<canvas id="pong" width="600" height="400"></canvas>
+		</div>
 		<script src="pong.js"></script>
 	</body>
 
